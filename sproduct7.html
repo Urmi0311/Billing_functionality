@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+
+    <section id="header">
+        <b>WATCH STORE</b>
+
+        <div id="navbar">
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </section>
+
+    <section id="proddetails" class="section-p1">
+        <div class="singleimage">
+            <img src="8.jpg" width="60%" id="main" alt="">
+            <div class="smallimggroup">
+
+                <div class="smallimgcol">
+                    <img src="8.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="8.1.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="8.2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="8.3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="8.4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="8.5.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="8.6.jpg" width="100%" class="smallimg" alt="">
+                </div>
+         
+            
+            </div>
+        </div>
+
+        <div class="singleprodetails">
+            <h4>French</h4>
+            <h2>$50.73</h2>
+            <select>
+                <option>Select Color</option>
+                <option>Rose Gold Mesh</option>
+                <option>Black Mesh</option>
+                <option>Black Silicon</option>
+                <option>Green Silicon</option>
+                <option>Pink Silicon</option>
+                
+            </select>
+            <input type="number" value="1">
+            <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>
+                French Connection Smartwatch Unisex Watch 
+                (Dial Colored Strap).
+                Dial Color: Black,Case Shape: Round, Dial Glass Material: Mineral.
+                Case Material: Metal Real Blood Oxygen Battery : 220 mAh.
+                Weather, smart alarm clock, raise hand to light screen, do not disturb mode (do not 
+                disturb time setting, turn off bracelet vibration, turn off information reminder).
+                Perfect Gift: Mesh band watch is an ideal gift for love, brother,husband, birthday, 
+                wedding, festive, and valentine's day.
+            </span>
+        </div>
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("main");
+        var smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function () {
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            MainImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function () {
+            MainImg.src = smallImg[4].src;
+        }
+        smallImg[5].onclick = function () {
+            MainImg.src = smallImg[5].src;
+        }
+        smallImg[6].onclick = function () {
+            MainImg.src = smallImg[6].src;
+        }
+      
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

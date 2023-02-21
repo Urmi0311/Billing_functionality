@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+
+    <section id="header">
+        <b>WATCH STORE</b>
+
+        <div id="navbar">
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </section>
+
+    <section id="proddetails" class="section-p1">
+        <div class="singleimage">
+            <img src="4.jpg" width="60%" id="main" alt="">
+            <div class="smallimggroup">
+
+                <div class="smallimgcol">
+                    <img src="4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="4.1.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="4.2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="4.3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="4.4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="4.5.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                
+            </div>
+        </div>
+
+        <div class="singleprodetails">
+            <h4>Fossil</h4>
+            <h2>$43.45</h2>
+            <select>
+                <option>Select Color</option>
+                <option>Rose Gold</option>
+                <option>Wine</option>
+                <option>Gold</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>
+            Fossil Women's Modern Courier Stainless Steel 
+            Chronograph Dress Quartz Watch.
+            Fossil is inspired by American creativity and ingenuity. Bringing new life into the 
+            watch and leathers industry by making quality, fashionable accessories that are 
+            both fun and accessible.
+            This 40mm Modern Courier features a gold-tone dial with Roman numerals, 
+            chronograph movement and gold-tone steel bracelet.
+            Round stainless steel case, with a gold dial. 40mm case, 18mm band width, mineral 
+            crystal, Quartz movement with an analog display. 
+            Attachment Material/Color: Stainless Steel/Gold; Closure type: 2 Pusher Foldover 
+            Clasp; Interchangeable with all Fossil 18MM bands.
+            Water resistant to 165 feet (50 M): suitable for short periods of recreational 
+            swimming and showering, but not diving or snorkeling.
+            Customize your watch with complimentary engraving at a local Fossil store. 
+            Engraving is available at participating U.S. and Canadian full-priced and outlet 
+            Fossil stores. This service is not applicable on all accessories.
+            </span>
+        </div>
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("main");
+        var smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function () {
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            MainImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function () {
+            MainImg.src = smallImg[4].src;
+        }
+        smallImg[5].onclick = function () {
+            MainImg.src = smallImg[5].src;
+        }
+        
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+
+    <section id="header">
+        <b>WATCH STORE</b>
+
+        <div id="navbar">
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </section>
+
+    <section id="proddetails" class="section-p1">
+        <div class="singleimage">
+            <img src="3.jpg" width="60%" id="main" alt="">
+            <div class="smallimggroup">
+
+                <div class="smallimgcol">
+                    <img src="3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="3.1.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="3.2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="3.3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="3.4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="3.5.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="3.6.jpg" width="100%" class="smallimg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="singleprodetails">
+            <h4>Titan</h4>
+            <h2>$72.49</h2>
+            <select>
+                <option>Select Color</option>
+                <option>Black</option>
+                <option>Black-Rose Gold</option>
+                <option>Blue</option>
+                <option>Green</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>
+            Titan Talk S with 1.78" AMOLED Display|Advanced 
+                    BT Calling|Music Storage with Wireless Audio 
+                    Connect|100+ Sports Modes|Animated 
+                    Watchfaces|5 Days Battery|IP68 Water 
+                    Resistant|Stress & Mood Monitor.
+                    1.78” AMOLED Display -Enjoy a crystal clear immersive display with 368 x 448 high 
+                    pixel resolution to give you the best experience possible.
+                    Advanced BT Calling - Talk through your wrist with Titan Talk S BT Calling. Connect 
+                    your phone once and have a hands-free calling experience on the go
+                    Music Storage - Save your playlist on the watch and have your run listening to 
+                    songs without carrying your phone.
+                    Wireless Audio Connect - Connect your audio device be it headphones, earphones, 
+                    or that beat box speaker in your party and let everyone tune to your songs on your 
+                    watch
+                    100+ Sports Modes - Sweat it, play it. Challenge yourself and track your progress in 
+                    your sport be it Basketball, Badminton or Football. Talk S has it all.
+                    100+ Watchfaces - Match your mood and style to your watchface everyday
+                    Animated Watchfaces - Your Titan Talk S watch is as dynamic as you. Upload new 
+                    animated watchfaces on your watch and see the action happening.
+            </span>
+        </div>
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("main");
+        var smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function () {
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            MainImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function () {
+            MainImg.src = smallImg[4].src;
+        }
+        smallImg[5].onclick = function () {
+            MainImg.src = smallImg[5].src;
+        }
+        smallImg[6].onclick = function () {
+            MainImg.src = smallImg[6].src;
+        }
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

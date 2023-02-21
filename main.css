@@ -1,0 +1,165 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+#navbar{
+    text-align: right;
+    width: 45%;
+    
+    padding: 10px 20px;
+    margin: 0 0 0 0;
+    
+
+}
+
+
+
+
+#product1 .pro{
+    width: 3%;
+    min-width: 250px;
+    border-radius: 25px;
+    margin: 12px 0px 0px 14px;
+    border: 2px solid #cce7d0;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5); 
+    position: relative;
+    
+}
+
+.star{
+    color: gray;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px; 
+    flex-wrap: wrap;
+    
+   
+    
+}
+#product1 .pro img{
+    width: 70%;
+   border-radius: 20px;
+   margin: 7px 0 0 0 ;
+ 
+}
+
+#product1 .pro .desc{
+    padding: 0px;
+
+}
+
+#product1 .pro .desc span{
+    font-size: 12px;
+}
+
+#product1 .pro .desc h5{
+    padding-top: 3px;
+}
+
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: azure;
+    color: aqua;
+    border: 1px solid;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#proddetails{
+    display: flex;
+    margin-top: 20px;
+}
+
+#proddetails .singleimage{
+    width: 40%;
+    margin-right: 50px;
+    
+}
+
+.smallimggroup{
+    display: flex;
+    justify-content: space-between;
+    margin: 7px 0px 0px 20px;
+    
+}
+
+.smallimgcol{
+    cursor: pointer;
+    
+}
+
+#proddetails .singleprodetails{
+    width: 50%;
+    padding: 30px;
+}
+
+#proddetails .singleprodetails h4{
+    padding: 40 0 20 0;
+}
+
+#proddetails .singleprodetails h2{
+    font-size: 20px;
+}
+
+#proddetails .singleprodetails select{
+    display: block;
+    padding: 6px 10px;
+    margin-bottom: 15px;
+}
+
+#proddetails .singleprodetails input{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+#proddetails .singleprodetails button{
+   background-color: #088178;
+   color: #fff; 
+   font-size: large;
+}
+
+#proddetails .singleprodetails input:focus{
+outline: none;
+}
+
+
+#proddetails .singleprodetails span{
+    line-height: 25px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+   
+#cart table{
+    width: 110%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+
+}
+
+#cart table img{
+    width: 70px;
+}

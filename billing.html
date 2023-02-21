@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="billing.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child1">
+            <form name="Myform" action="" id="Myform">
+                <header>Shipping Address</header>
+                <fieldset class="fieldset">
+                    <div class="first">
+
+                        <div class="one">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" required>
+                        </div>
+                        <div class="one">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>
+
+                        <div class="one">
+                            <label for="aptaddress">Apt/Suite</label>
+                            <input type="text" name="aptaddress" id="aptaddress">
+                        </div>
+
+                        <div class="one">
+                            <label for="address">Street Address</label>
+                            <input type="text" name="address" id="address" required>
+
+                        </div>
+
+                        <div class="one">
+
+                            <label for="country">Country</label>
+                            <input type="text" id="country" list="countrylist" name="country" required>
+                            <datalist id="countrylist">
+                                <option value="America">
+                                <option value="India">
+                                <option value="Canada">
+                                <option value="UK">
+                                <option value="Switzerland">
+                                <option value="Australia">
+                                <option value="Argentina">
+                                <option value="Armenia">
+                                <option value="Aruna">
+                                <option value="Austria">
+                                <option value="Azerbaijan">
+                                <option value="Bahamas">
+
+                            </datalist>
+
+                        </div>
+
+                        <div class="one">
+                            <label for="state">State</label>
+                            <input type="text" name="state" id="state" required>
+                        </div>
+
+                        <div class="one">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" required>
+                        </div>
+
+
+                        <div class="one">
+                            <label for="code">Postal Code</label>
+                            <input type="text" name="code" id="code" required>
+
+                        </div>
+                </fieldset>
+        </div>
+
+
+        <div class="child2">
+
+
+
+            <header>Billing Address</header>
+
+
+
+            <fieldset class="fieldset">
+                <div class="first">
+
+
+
+                    <div class="one">
+                        <label for="billfirstname">First Name</label>
+                        <input type="text" name="billfirstname" id="billfirstname" required>
+                    </div>
+                    <div class="one">
+
+                        <label for="billlastname">Last Name</label>
+                        <input type="text" name="billlastname" id="billlastname" required>
+                    </div>
+
+                    <div class="one">
+                        <label for="billaptaddress">Apt/Suite</label>
+                        <input type="text" name="billaptaddress" id="billaptaddress">
+
+                    </div>
+
+                    <div class="one">
+                        <label for="billaddress">Street Address</label>
+                        <input type="text" name="billaddress" id="billaddress" required>
+                    </div>
+
+
+                    <div class="one">
+                        <label for="billcountry">Country</label>
+                        <input type="text" id="billcountry" list="billcountry" name="billcountry" required>
+                        <datalist id="billcountry">
+                            <option value="America">
+                            <option value="India">
+                            <option value="Canada">
+                            <option value="UK">
+                            <option value="Switzerland">
+                            <option value="Australia">
+                            <option value="Argentina">
+                            <option value="Armenia">
+                            <option value="Aruna">
+                            <option value="Austria">
+                            <option value="Azerbaijan">
+                            <option value="Bahamas">
+                        </datalist>
+                    </div>
+
+
+                    <div class="one">
+                        <label for="billcity">City</label>
+                        <input type="text" name="billcity" id="billcity" required>
+
+                    </div>
+
+                    <div class="one">
+                        <label for="billstate">State</label>
+                        <input type="text" name="billstate" id="billstate" required>
+                    </div>
+                    <div class="one">
+                        <label for="billcode">Postal Code</label>
+                        <input type="text" name="billcode" id="billcode" required>
+
+                    </div>
+
+
+
+
+
+
+                </div>
+            </fieldset>
+
+            <div class="ch">
+                <input type="checkbox" name="" id="sameaddress" onclick="Myfunction()">
+                <label for="sameaddress">Billing Address is the Same as Shipping</label>
+            </div>
+            <div class="button">
+                <button id="validationBtn" onclick="validateForm()">Place Order</button>
+            </div>
+
+        </div>
+
+    </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+
+    <section id="header">
+        <b>WATCH STORE</b>
+
+        <div id="navbar">
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </section>
+
+    <section id="proddetails" class="section-p1">
+        <div class="singleimage">
+            <img src="5.jpg" width="60%" id="main" alt="">
+            <div class="smallimggroup">
+
+                <div class="smallimgcol">
+                    <img src="5.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="5.1.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="5.2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="5.3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="5.4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="singleprodetails">
+            <h4>Titan</h4>
+            <h2>$54.31</h2>
+            <select>
+                <option>Select Color</option>
+                <option>Green</option>
+                <option>Black</option>
+                <option>Blue</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>
+                Titan Analog White Dial Men's 
+                Watch-1801SL01.
+                1801SL01-DJ254-CLASSIQUE DISC HANDS
+                Warranty Type: Manufacturer; Band Material Type: 
+                Leather; Band Color: Green; Case Material Type: Stainless 
+                Steel; Department Name: Mens; Item Shape: Round.
+                Watch Movement Type: Quartz.
+
+            </span>
+        </div>
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("main");
+        var smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function () {
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            MainImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function () {
+            MainImg.src = smallImg[4].src;
+        }
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

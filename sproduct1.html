@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+
+    <section id="header">
+        <b>WATCH STORE</b>
+
+        <div id="navbar">
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </section>
+
+    <section id="proddetails" class="section-p1">
+        <div class="singleimage">
+            <img src="2.jpg" width="60%" id="main" alt="">
+            <div class="smallimggroup">
+                
+                <div class="smallimgcol">
+                    <img src="2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="2.1.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="2.2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="2.3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="2.4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="2.5.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="2.6.jpg" width="100%" class="smallimg" alt="">
+                </div>
+            </div>
+        </div>
+
+            <div class="singleprodetails">
+                <h4>Armani Exchange</h4>
+                <h2>$105.08</h2>
+                <select>
+                    <option>Select Color</option>
+                    <option>Black</option>
+                    <option>Grey</option>
+                    <option>Brown</option>
+                    <option>Pink</option>   
+                    
+                </select>
+                <input type="number" value="1">
+                <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
+                <h4>Product Details</h4>
+                <span><pre></pre>
+                    Armani Exchange Analog Black Dial Men's Watch-AX2600.
+                    Dial Color: Black, Case Shape: Round.
+                    Band Color: Silver, Band Material: Stainless Steel.
+                    Watch Movement Type: Quartz, Watch Display Type: Analog.
+                    Case Material: Stainless Steel, Case Diameter: 44 millimeters.
+                    2 years international warranty.
+                    Remove plastic at crown to start the watch.</span>
+            </div>       
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("main");
+        var smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function(){
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            MainImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function(){
+            MainImg.src = smallImg[4].src;
+        }
+        smallImg[5].onclick = function(){
+            MainImg.src = smallImg[5].src;
+        }
+        smallImg[6].onclick = function(){
+            MainImg.src = smallImg[6].src;
+        }
+    </script>
+<script src="script.js"></script>
+
+</body>
+
+</html>

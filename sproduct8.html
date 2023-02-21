@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+
+<body>
+
+    <section id="header">
+        <b>WATCH STORE</b>
+
+        <div id="navbar">
+            <i class="fas fa-shopping-cart"></i>
+
+        </div>
+    </section>
+
+    <section id="proddetails" class="section-p1">
+        <div class="singleimage">
+            <img src="9.jpg" width="60%" id="main" alt="">
+            <div class="smallimggroup">
+
+                <div class="smallimgcol">
+                    <img src="9.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="9.1.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="9.2.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="9.3.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="9.4.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+                <div class="smallimgcol">
+                    <img src="9.5.jpg" width="100%" class="smallimg" alt="">
+                </div>
+
+               
+         
+            
+            </div>
+        </div>
+
+        <div class="singleprodetails">
+            <h4>FCUK</h4>
+            <h2>$35.22</h2>
+            <select>
+                <option>Select Color</option>
+                <option>Black</option>
+                <option>Blush Pink</option>
+                <option>Silve</option>
+                <option>Blue</option>
+                <option>Gray</option>
+                
+            </select>
+            <input type="number" value="1">
+            <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>
+            FCUK Fit Pro Full Touch 1.69" 
+            Superior Display Smartwatch, 
+            Sleek Design Metal Body, 8 Sport 
+            Modes, Spo2, Heart Rate 
+            Monitoring, IP 68 Water 
+            Resistance and Long Battery Life.
+            1.69 inch Full-touch HD colorful screen with 240*280 
+            resolution and Adjustable brightness option. The color 
+            saturation is high and display is real and vivid. This 
+            smartwatch has a beautiful metal body that brings light 
+            and thin wearing experience and also protects the screen 
+            from physical damages.
+            Notification - This Smartwatch comes with Incoming 
+            Call/ Messaging Alert/ Receive Call notifications
+            Health Protection - This smartwatch has Built-in SpO2/oxygen measurement, 
+            blood pressure, Dynamic Heart rate tracking and sleep monitoring keep you 
+            informed about physical condition.
+            </span>
+        </div>
+    </section>
+
+    <script>
+        var MainImg = document.getElementById("main");
+        var smallImg = document.getElementsByClassName("smallimg");
+
+        smallImg[0].onclick = function () {
+            MainImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function () {
+            MainImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function () {
+            MainImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function () {
+            MainImg.src = smallImg[3].src;
+        }
+        smallImg[4].onclick = function () {
+            MainImg.src = smallImg[4].src;
+        }
+        smallImg[5].onclick = function () {
+            MainImg.src = smallImg[5].src;
+        }
+        
+      
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
