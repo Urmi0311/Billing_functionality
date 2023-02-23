@@ -64,7 +64,11 @@
                 <option>Wine</option>
                 <option>Gold</option>
             </select>
-            <input type="number" value="1">
+            <div class="product-btn-group">
+                <button class="btn minus-btn disabled" type="button"
+                    onclick="quantityOfItemDec()">-</button>
+                <input type="text" name="numberOfitem" id="quantity" value="1">
+                <button class="btn plus-btn" type="button" onclick="quantityOfItemInc()">+</button>
             <button class="normal" onClick="location.href='billing.html'">Add to Cart</button>
             <h4>Product Details</h4>
             <span>

@@ -7,6 +7,7 @@ body{
     
 }
 
+
 .first{
  
     padding: 10% 30%;
@@ -17,15 +18,22 @@ body{
 .fieldset{
     border: 1px solid black;
   width:60vh;
-  /* height: 70vh; */
+  
   align-items: center;
   background-color: lightblue;
-  /* float: right; */
+
   
   
 
     
 }
+
+input[type="checkbox"]:checked ~ 
+fieldset1{
+    display: none;
+  }
+  
+
 
 header{
     font-weight: bolder;
@@ -77,3 +85,11 @@ header{
     color: white;
     justify-content: space-between;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+

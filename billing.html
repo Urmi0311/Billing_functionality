@@ -5,42 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="billing.css">
     <title>Document</title>
+    <link rel="stylesheet" href="billing.css">
+   
 </head>
 
 <body>
     <div class="container">
         <div class="child1">
-            <form name="Myform" action="" id="Myform">
+            <form name="Myform" onsubmit=" return validateAddress()" method="post">
                 <header>Shipping Address</header>
                 <fieldset class="fieldset">
                     <div class="first">
 
                         <div class="one">
                             <label for="firstname">First Name</label>
-                            <input type="text" name="firstname" id="firstname" required>
+                            <input required type="text" name="firstname" id="firstname" autocomplete="firstname"
+                                enterkeyhint="next">
                         </div>
                         <div class="one">
                             <label for="lastname">Last Name</label>
-                            <input type="text" name="lastname" id="lastname" required>
+                            <input required type="text" name="lastname" id="lastname" autocomplete="lastname"
+                                enterkeyhint="next">
                         </div>
-
                         <div class="one">
                             <label for="aptaddress">Apt/Suite</label>
-                            <input type="text" name="aptaddress" id="aptaddress">
+                            <input required type="text" name="aptaddress" id="aptaddress" autocomplete="aptaddress"
+                                required enterkeyhint="next">
                         </div>
 
                         <div class="one">
                             <label for="address">Street Address</label>
-                            <input type="text" name="address" id="address" required>
+                            <input required type="text" name="address" id="address" autocomplete="address" required
+                                enterkeyhint="next">
 
                         </div>
 
                         <div class="one">
 
                             <label for="country">Country</label>
-                            <input type="text" id="country" list="countrylist" name="country" required>
+                            <input required type="text" id="country" list="countrylist" name="country"
+                                autocomplete="country" required enterkeyhint="next">
                             <datalist id="countrylist">
                                 <option value="America">
                                 <option value="India">
@@ -61,23 +66,26 @@
 
                         <div class="one">
                             <label for="state">State</label>
-                            <input type="text" name="state" id="state" required>
+                            <input required type="text" name="state" id="state" autocomplete="state" required
+                                enterkeyhint="next">
                         </div>
 
                         <div class="one">
                             <label for="city">City</label>
-                            <input type="text" name="city" id="city" required>
+                            <input required type="text" name="city" id="city" autocomplete="city" required
+                                enterkeyhint="next">
                         </div>
 
 
                         <div class="one">
                             <label for="code">Postal Code</label>
-                            <input type="text" name="code" id="code" required>
+                            <input required type="text" name="code" id="code" autocomplete="code" required
+                                enterkeyhint="next">
 
                         </div>
                 </fieldset>
         </div>
-
+        
 
         <div class="child2">
 
@@ -94,29 +102,34 @@
 
                     <div class="one">
                         <label for="billfirstname">First Name</label>
-                        <input type="text" name="billfirstname" id="billfirstname" required>
+                        <input required type="text" name="billfirstname" id="billfirstname" autocomplete="billfirstname"
+                            enterkeyhint="next">
                     </div>
                     <div class="one">
 
                         <label for="billlastname">Last Name</label>
-                        <input type="text" name="billlastname" id="billlastname" required>
+                        <input required type="text" name="billlastname" id="billlastname" autocomplete="billlastname"
+                            enterkeyhint="next">
                     </div>
 
                     <div class="one">
                         <label for="billaptaddress">Apt/Suite</label>
-                        <input type="text" name="billaptaddress" id="billaptaddress">
+                        <input required type="text" name="billaptaddress" id="billaptaddress" autocomplete="billaptaddress"
+                            enterkeyhint="next">
 
                     </div>
 
                     <div class="one">
                         <label for="billaddress">Street Address</label>
-                        <input type="text" name="billaddress" id="billaddress" required>
+                        <input required type="text" name="billaddress" id="billaddress" autocomplete="billaddress"
+                            enterkeyhint="next">
                     </div>
 
 
                     <div class="one">
                         <label for="billcountry">Country</label>
-                        <input type="text" id="billcountry" list="billcountry" name="billcountry" required>
+                        <input required type="text" id="billcountry" list="billcountry" name="billcountry"
+                            autocomplete="billcountry" enterkeyhint="next">
                         <datalist id="billcountry">
                             <option value="America">
                             <option value="India">
@@ -136,17 +149,20 @@
 
                     <div class="one">
                         <label for="billcity">City</label>
-                        <input type="text" name="billcity" id="billcity" required>
+                        <input required type="text" name="billcity" id="billcity" autocomplete="billcity"
+                            enterkeyhint="next">
 
                     </div>
 
                     <div class="one">
                         <label for="billstate">State</label>
-                        <input type="text" name="billstate" id="billstate" required>
+                        <input required type="text" name="billstate" id="billstate" autocomplete="billstate"
+                            enterkeyhint="next">
                     </div>
                     <div class="one">
                         <label for="billcode">Postal Code</label>
-                        <input type="text" name="billcode" id="billcode" required>
+                        <input required type="text" name="billcode" id="billcode" autocomplete="billcode"
+                            enterkeyhint="next">
 
                     </div>
 
@@ -157,20 +173,20 @@
 
                 </div>
             </fieldset>
-
             <div class="ch">
-                <input type="checkbox" name="" id="sameaddress" onclick="Myfunction()">
-                <label for="sameaddress">Billing Address is the Same as Shipping</label>
+                <input type="checkbox" id="check" name="check" onclick="valiationForm()">
+                <label for="check" class="check"> Same as Shipping Address</label>
             </div>
             <div class="button">
-                <button id="validationBtn" onclick="validateForm()">Place Order</button>
+                <button id="validationBtn">Place Order</button>
             </div>
-
         </div>
+       
+        </form>
 
-    </div>
-    </form>
-    <script src="script.js"></script>
+        <script src="billing.js"></script>
+
+
 </body>
 
 </html>
