@@ -23,3 +23,13 @@ function quantityOfItemDec() {
 
   document.getElementById("quantity").value = quantityitem;
 }
+
+function myfunction(){
+  var input = document.getElementById("quantity")
+  if(quantity.value<1){
+      window.alert("Cart could not be empty")
+  }
+  else{
+      location.href = "billing.html"
+  }
+}
